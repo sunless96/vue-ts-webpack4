@@ -1,0 +1,51 @@
+{
+  "name": "webpack4-vue",
+  "version": "1.0.0",
+  "description": "webpack4",
+  "private": true,
+  "scripts": {
+    "test": "",
+    "dll": "cross-env NODE_ENV=development webpack --config build/webpack.dll.js",
+    "dev": "cross-env NODE_ENV=development node build/dev-server",
+    "start": "cross-env NODE_ENV=development webpack --config build/webpack.dll.js && cross-env NODE_ENV=development node build/dev-server",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sunless96/vue-ts-webpack4.git"
+  },
+  "keywords": [
+    "webpack",
+    "vue",
+    "ts"
+  ],
+  "author": "wx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunless96/vue-ts-webpack4/issues"
+  },
+  "homepage": "https://github.com/sunless96/vue-ts-webpack4#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.17",
+    "vue-lazyload": "^1.2.6",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7",
+    "webpack-manifest-plugin": "^2.0.3",
+    "webpack-merge": "^4.1.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "semi": false
+  }
+}
